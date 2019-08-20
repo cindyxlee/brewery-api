@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(236, 224, 210);
+  color: black;
+}
+
+.form-container {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.2em;
+  padding-top: 1.5em;
+}
+
+h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 2.5em;
+}
+
+.search-form {
+  padding-top: 1em;
+}
+
+input {
+  border-radius: 5px;
+  width: 18em;
+  height: 2.5em;
+  position: relative;
+  padding-left: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  border: none;
+}
+
+::placeholder {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+button {
+  height: 2.5em;
+  width: 4em;
+  border: 1px solid grey;
+  border-radius: 5px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: grey;
+  cursor: pointer;
+}
+
+#map {
+  height: 500px;
+  width: 95%;
+  margin: auto;
+  top: 1em;
+  border-radius: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+#search-results {
+  text-align: center;
+  padding: 3em;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.result-display {
+  list-style: none;
+  line-height: 30px;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-family: 'Abril Fatface', cursive;
+}
+
+/* @media screen and (min-width: 1200px) {
+  
+} */

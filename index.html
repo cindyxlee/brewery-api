@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Find Breweries Near You!</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Josefin+Sans&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section class="form-container">
+    <h1 class="title">Cheers!</h1>
+    <form class="search-form">
+      <label for="search-term" class="search-text">Search for breweries near you</label>
+      <input type="text" class="search-box" id="js-search-loc" name="search-term" placeholder="Enter city" required>
+      <button class="search-button" type="submit">search</button>
+    </form>
+  </section>
+  <div id="map"></div>
+  <section id="search-results" class="hidden">
+    <ul id="results-list"></ul>
+  </section>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDg2xuEAHZDpsZiUdIIoT46PEp7wa7WWdA&callback=initMap"
+    type="text/javascript"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
