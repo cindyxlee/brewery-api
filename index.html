@@ -16,11 +16,14 @@
     <h1 class="title">Cheers!</h1>
     <form class="search-form">
       <label for="search-term" class="search-text">Search for breweries near you</label>
-      <input type="text" class="search-box" id="js-search-loc" name="search-term" placeholder="Enter city" required>
+      <br>
+      <input type="text" class="search-city" id="js-search-loc" name="search-term" placeholder="Enter city" required>
+      <input type="text" class="search-state" id="js-search-state" name="search-term" placeholder="Enter state name"
+        required>
       <button class="search-button" type="submit">search</button>
     </form>
   </section>
-  <div id="map"></div>
+  <div id="map" class="hidden"></div>
   <section id="search-results" class="hidden">
     <ul id="results-list"></ul>
   </section>
