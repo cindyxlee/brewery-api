@@ -22,7 +22,7 @@ h1 {
 }
 
 .search-form {
-  padding-top: 1em;
+  padding-top: .8em;
 }
 
 input {
@@ -35,6 +35,11 @@ input {
   border: none;
 }
 
+.search-city, .search-state {
+  align-items: center;
+  margin-top: .5em;
+}
+
 ::placeholder {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1em;
@@ -44,12 +49,24 @@ input {
 button {
   height: 2.5em;
   width: 4em;
-  border: 1px solid grey;
+  border: 1px transparent grey;
   border-radius: 5px;
   font-family: 'Josefin Sans', sans-serif;
-  color: grey;
+  background-color:  rgb(170, 170, 170);
   cursor: pointer;
 }
+
+button:hover, button:focus {
+  background-color: grey;
+}
+
+/* .error-message {
+  color: red;
+  font-size: 1.1em;
+  text-align: center;
+  font-weight: bold;
+  padding-top: .6em; 
+} */
 
 #map {
   height: 500px;
@@ -74,11 +91,30 @@ button {
   line-height: 30px;
 }
 
+a:link {
+  color: blue;
+}
+
+a:hover {
+  color: darkblue;
+}
+
+a:visited {
+  color: rgb(148, 148, 148);
+}
+
+a:active {
+  color: red;
+}
+
 h3 {
   text-transform: uppercase;
   font-family: 'Abril Fatface', cursive;
 }
 
-/* @media screen and (min-width: 1200px) {
-  
-} */
+@media screen and (min-width: 249px) and (max-width: 402px) {
+  .search-city, .search-state {
+    display: block;
+    margin: .3em auto .3em;
+  }
+}
